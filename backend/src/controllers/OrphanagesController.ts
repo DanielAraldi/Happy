@@ -1,15 +1,18 @@
 import { Request, Response } from 'express';
 import { getRepository } from 'typeorm';
 import Orphanage from '../models/Orphanage';
+import OrphanageView from '../views/orphanages_view';
 
 export default {
     // Mostra os orfanatos
     async index(request: Request, response: Response) {
         const orphanagesRepository = getRepository(Orphanage)
         
-        const orphanages = await orphanagesRepository.find()
+        const orphanages = await orphanagesRepository.find({
+            relations: ['images']
+        })
 
-        return response.json(orphanages)
+        return response.json(OrphanageView.renderMany(orphanages))
     },
 
     // Mostra um orfanato específico
@@ -18,9 +21,11 @@ export default {
 
         const orphanagesRepository = getRepository(Orphanage)
         
-        const orphanage = await orphanagesRepository.findOneOrFail(id)
+        const orphanage = await orphanagesRepository.findOneOrFail(id, {
+            relations: ['images']
+        })
 
-        return response.json(orphanage)
+        return response.json(OrphanageView.render(orphanage))
     },
 
     // Cria um usuário
