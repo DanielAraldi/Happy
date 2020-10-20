@@ -88,6 +88,7 @@
 @media (max-width: 800px) {
 
     #page-landing .content-wrapper {
+        padding: 50px;
         background: none;
         max-width: 900px;
         max-height: 900px;
