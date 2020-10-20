@@ -68,3 +68,124 @@
 .content-wrapper .enter-app:hover {
     background: #96FEFF;
 }
+
+@media (max-width: 1100px) {
+
+    #page-landing .content-wrapper {
+        max-width: none;
+        padding: 0px 110px;
+    }
+
+    .content-wrapper .location {
+        right: 110px;
+    }
+
+    .content-wrapper .enter-app {
+        right: 110px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    #page-landing .content-wrapper {
+        background: none;
+        max-width: 900px;
+        max-height: 900px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "logo location"
+        "main main"
+        "enter-app enter-app"
+        ;
+    }
+
+    #page-landing .content-wrapper img {
+        grid-area: logo;
+        display: grid;
+    }
+
+    #page-landing .content-wrapper main {
+        max-width: none;
+        grid-area: main;
+        display: grid;
+    }
+
+    #page-landing .content-wrapper main p {
+        margin-top: 50px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .content-wrapper .location {
+        right: 0px;
+        grid-area: location;
+        display: grid;
+    }
+
+    .content-wrapper .enter-app {
+        right: 0px;
+        grid-area: enter-app;
+        display: grid;
+        height: 100px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #page-landing .content-wrapper {
+        padding: 25px 20px;
+        background: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "logo location"
+        "main main"
+        "enter-app enter-app"
+        ;
+    }
+
+    #page-landing .content-wrapper img {
+        grid-area: logo;
+        display: grid;
+        width: 100px;
+    }
+
+    #page-landing .content-wrapper main {
+        grid-area: main;
+        display: grid;
+    }
+
+    #page-landing .content-wrapper main h1 {
+        font-size: 50px;
+        line-height: 45px;
+    }
+
+    #page-landing .content-wrapper main p {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .content-wrapper .location {
+        line-height: 24px;
+        width: 100px;
+        grid-area: location;
+        display: grid;
+    }
+
+    .content-wrapper .location strong {
+        font-size: 16px;
+    }
+
+    .content-wrapper .location span {
+        font-size: 13px;
+    }
+
+    .content-wrapper .enter-app {
+        grid-area: enter-app;
+        display: grid;
+        height: 65px;
+        width: 100%;
+    }
+}

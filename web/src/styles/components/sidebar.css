@@ -37,3 +37,14 @@ aside.app-sidebar footer a:hover,
 aside.app-sidebar footer button:hover {
   background: #17d6eb;
 }
+
+@media (max-width: 1100px) {
+
+  aside.app-sidebar {
+    height: 100px;
+    z-index: 10000;
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+
+}

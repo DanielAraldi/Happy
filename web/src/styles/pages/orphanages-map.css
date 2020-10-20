@@ -91,3 +91,79 @@
 #page-map .map-popup .leaflet-popup-tip-container {
     display: none;
 }
+
+@media (max-width: 800px) {
+
+    #page-map aside {
+        width: 360px;
+        padding: 40px;
+    }
+
+    #page-map aside header img {
+        width: 50px;
+    }
+
+    #page-map aside header h2 {
+        font-size: 33px;
+        line-height: 45px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    #page-map {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "aside"
+        "map"
+        "map"
+        ;
+    }
+
+    #page-map aside {
+        grid-area: aside;
+        width: 100%;
+    }
+
+    #page-map aside header img {
+        width: 30px;
+    }
+
+    #page-map aside header h2 {
+        margin-top: 15px;
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    #page-map aside header p {
+        line-height: 20px;
+        margin-top: 20px;
+    }
+
+    #page-map aside footer strong {
+        font-size: 16px;
+    }
+
+    #page-map aside footer span {
+        font-size: 13px;
+    }
+
+    #page-map .leaflet-container {
+        grid-area: map;
+    }
+
+    #page-map .create-orphanage {
+        right: 20px;
+        bottom: 20px;
+        width: 55px;
+        height: 55px;
+    }
+
+    #page-map .map-popup .leaflet-popup-content {
+        font-size: 16px;
+        margin: 10px;
+    }
+
+}
