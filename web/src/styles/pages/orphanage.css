@@ -172,3 +172,105 @@
 .orphanage-details .orphanage-details-content button.contact-button:hover {
   background: #36CF82;
 }
+
+@media (max-width: 530px) {
+
+  .orphanage-details {
+    width: 100%;
+    margin: 40px auto 25px auto;
+  }
+
+  .orphanage-details .images {
+    grid-template-columns: repeat(4 ,1fr);
+    margin: 15px 30px 0;
+  }
+
+  .orphanage-details .orphanage-details-content {
+    padding: 60px 30px;
+  }
+
+  .orphanage-details .orphanage-details-content h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .orphanage-details .orphanage-details-content p {
+    line-height: 24px;
+    margin-top: 20px;
+  }
+
+  .orphanage-details .orphanage-details-content .map-container {
+    margin-top: 54px;
+  }
+
+  .orphanage-details .orphanage-details-content hr {
+    margin: 54px 0;
+  }
+
+  .orphanage-details .orphanage-details-content h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .orphanage-details .orphanage-details-content .open-details div {
+    padding: 28px 20px;
+    line-height: 24px;
+  }
+
+  @media (max-width: 310px) {
+
+    .orphanage-details .images {
+      grid-template-columns: repeat(3 ,1fr);
+      margin: 15px 20px 0;
+    }
+
+    .orphanage-details .orphanage-details-content {
+      padding: 50px 20px;
+    }
+
+    .orphanage-details .orphanage-details-content h1 {
+      font-size: 34px;
+      line-height: 34px;
+      margin-bottom: 5px;
+    }
+
+    .orphanage-details .orphanage-details-content p {
+      line-height: 20px;
+      margin-top: 16px;
+      font-size: 16px;
+    }
+
+    .orphanage-details .orphanage-details-content .map-container {
+      margin-top: 44px;
+    }
+
+    .orphanage-details .orphanage-details-content hr {
+      margin: 44px 0;
+    }
+
+    .orphanage-details .orphanage-details-content h2 {
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    .orphanage-details .orphanage-details-content .open-details {
+      margin-top: 24px;
+      display: block;
+    }
+
+    .orphanage-details .orphanage-details-content .open-details div {
+      padding: 20px 16px;
+      line-height: 20px;
+    }
+
+    .orphanage-details .orphanage-details-content .open-details div.hour {
+      margin-bottom: 20px;
+    }
+
+    .orphanage-details .orphanage-details-content .open-details div svg {
+      margin-bottom: 10px;
+    }
+
+  }
+
+}
