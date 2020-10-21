@@ -169,3 +169,112 @@ form.create-orphanage-form button.confirm-button svg {
 form.create-orphanage-form button.confirm-button:hover {
   background: #36CF82;
 }
+
+@media (max-width: 530px) {
+
+  aside.app-sidebar {
+    height: 60px;
+  }
+
+  form.create-orphanage-form {
+    width: 100%;
+    margin: 40px auto 25px auto;
+    padding: 40px 30px;
+}
+
+form.create-orphanage-form fieldset + fieldset {
+  margin-top: 60px;
+}
+
+form.create-orphanage-form fieldset legend {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+form.create-orphanage-form .leaflet-container {
+    margin-bottom: 30px;
+}
+
+form.create-orphanage-form .input-block + .input-block {
+    margin-top: 20px;
+}
+
+form.create-orphanage-form .input-block label span {
+    font-size: 14px;
+    margin-left: 30px;
+    line-height: 20px;
+}
+
+form.create-orphanage-form .input-block label {
+    line-height: 18px;
+}
+
+form.create-orphanage-form .input-block input {
+    height: 60px;
+}
+
+form.create-orphanage-form .input-block textarea {
+    padding: 12px;
+    line-height: 20px;
+}
+
+form.create-orphanage-form .input-block .images-container {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+form.create-orphanage-form .input-block .button-select button {
+    height: 60px;
+}
+
+form.create-orphanage-form button.confirm-button {
+    margin-top: 44px;
+    height: 60px;
+}
+
+}
+
+@media (max-width: 310px) {
+
+  form.create-orphanage-form {
+    margin: 40px auto 15px auto;
+    padding: 40px 20px;
+  }
+
+  form.create-orphanage-form fieldset legend {
+    font-size: 26px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+  }
+
+  form.create-orphanage-form .input-block label span {
+    font-size: 12px;
+    margin-left: 15px;
+  }
+
+  form.create-orphanage-form .input-block input {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  form.create-orphanage-form .input-block .images-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  form.create-orphanage-form .input-block .button-select button {
+    height: 50px;
+  }
+
+  form.create-orphanage-form .input-block textarea {
+    padding: 10px;
+    line-height: 18px;
+    font-size: 16px;
+  }
+
+  form.create-orphanage-form button.confirm-button {
+    margin-top: 40px;
+    height: 50px;
+  }
+
+}

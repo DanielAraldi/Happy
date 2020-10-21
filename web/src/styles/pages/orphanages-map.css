@@ -124,6 +124,7 @@
 
     #page-map aside {
         grid-area: aside;
+        padding: 30px;
         width: 100%;
     }
 

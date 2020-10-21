@@ -48,3 +48,16 @@ aside.app-sidebar footer button:hover {
   }
 
 }
+
+@media (max-width: 450px) {
+
+  aside.app-sidebar img {
+    width: 32px;
+  }
+
+  aside.app-sidebar footer a, aside.app-sidebar footer button {
+    height: 40px;
+    width: 40px;
+  }
+
+}
