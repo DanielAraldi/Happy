@@ -7,6 +7,7 @@ import { Map, Marker, TileLayer } from "react-leaflet";
 import '../styles/pages/orphanage.css';
 
 import Sidebar from "../components/Sidebar";
+import Loading from "../components/Loading";
 import mapIcon from "../utils/mapIcon";
 
 import api from "../services/api";
@@ -41,7 +42,7 @@ export default function Orphanage() {
   }, [id]);
 
   if (!orphanage) {
-    return <p>Carregando...</p>
+    return <Loading />
   }
 
   return (

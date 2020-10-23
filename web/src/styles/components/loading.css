@@ -1,0 +1,21 @@
+.loading-page {
+    width: 100vw;
+    height: 100vh;
+}
+
+.loading-page img {
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.loading-page h3 {
+    top: 62.5%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: black;
+}
