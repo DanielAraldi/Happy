@@ -8,6 +8,7 @@ import { useRoute } from '@react-navigation/native';
 import api from '../services/api';
 
 import mapMarkerImg from '../images/map-marker.png';
+import loadingImg from '../images/loading-page.gif';
 
 interface OrphanageDetailsRouteParams {
   id: number;
@@ -43,7 +44,8 @@ export default function OrphanageDetails() {
   if (!orphanage) {
     return (
       <View style={styles.container}>
-        <Text style={styles.description}>Carregando...</Text>
+        <Image source={loadingImg} style={styles.imageLoading}/>
+        <Text style={styles.textLoading}>Finding Happy...</Text>
       </View>
     )
   }
@@ -263,5 +265,20 @@ const styles = StyleSheet.create({
     color: '#FFF',
     fontSize: 16,
     marginLeft: 16,
+  },
+
+  imageLoading: {
+    width: 150,
+    height: 150,
+    top: '50%',
+    left: '50%',
+  },
+
+  textLoading: {
+    fontFamily: 'Nunito_700Bold',
+    color: '#4D6F80',
+    fontSize: 20,
+    top: '62.5%',
+    left: '50%',
   }
 })
