@@ -82,7 +82,7 @@ Essa aplicação foi realizada durante a **Next Level Week #3**, projeto da [Roc
     # Exclui a tabela images
     $ yarn typeorm migration:revert # npm typeorm migration:revert
   # Inicie a API
-  $ yarn dev # ou npm npm dev
+  $ yarn dev # ou npm dev
 
   # APLICAÇÃO WEB
   $ cd web
