@@ -9,7 +9,9 @@
     <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/DanielAraldi/Happy?style=flat-square">
     <img alt="GitHub" src="https://img.shields.io/github/license/DanielAraldi/Happy?style=flat-square">
     <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%237519C1?style=flat-square"><br/>
-    [![Run in Insomnia](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=&uri=)<br/>
+    <a href="https://insomnia.rest/run/?label=&uri=" target="_blank">
+        <img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia">
+    </a><br/>
 </p>
 
 <p align="center">
