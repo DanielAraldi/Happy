@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Proffy" src=".github/logo.svg" height="100px" />
+    <img alt="Happy" src=".github/logo.svg" height="100px" />
     <br>Next Level Week #3<br/>
     Node.js | ReactJS | React Native
 </h1>
