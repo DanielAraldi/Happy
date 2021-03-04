@@ -9,9 +9,6 @@
     <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/DanielAraldi/Happy?style=flat-square">
     <img alt="GitHub" src="https://img.shields.io/github/license/DanielAraldi/Happy?style=flat-square">
     <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%237519C1?style=flat-square"><br/>
-    <a href="https://insomnia.rest/run/?label=&uri=" target="_blank">
-        <img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia">
-    </a><br/>
 </p>
 
 <p align="center">
@@ -71,15 +68,12 @@ Essa aplicação foi realizada durante a **Next Level Week #3**, projeto da [Roc
   # API
   $ cd backend
   # Instalando as dependências do projeto.
-  $ yarn # npm install
+  $ yarn install # npm install
 
   # CONFIGURANDO O BANCO DE DADOS 
-  # - CRIAÇÃO DE TABELAS: 
-  $ yarn typeorm migrations:run # npm typeorm migrations:run
-  # - EXCLUIR TABELAS:
-    # Exclui a tabela orphanages
-    $ yarn typeorm migrations:revert # npm typeorm migrations:revert
-    # Exclui a tabela images
+    # - CRIAÇÃO DE TABELAS: 
+    $ yarn typeorm migrations:run # npm typeorm migrations:run
+    # - EXCLUIR ÚLTIMA TABELA CRIADA:
     $ yarn typeorm migration:revert # npm typeorm migration:revert
   # Inicie a API
   $ yarn dev # ou npm dev
@@ -87,14 +81,14 @@ Essa aplicação foi realizada durante a **Next Level Week #3**, projeto da [Roc
   # APLICAÇÃO WEB
   $ cd web
   # Instalando as dependências do projeto.
-  $ npm install # ou yarn add
+  $ npm install # ou yarn install
   # Inicie a aplicação web
   $ npm start # ou yarn start
 
   # APLICAÇÃO MOBILE
   $ cd mobile
   # Instalando as dependências do projeto.
-  $ yarn # ou npm install
+  $ yarn install # ou npm install
   # Inicie a aplicação mobile
   $ yarn start # ou npm start
 ```
